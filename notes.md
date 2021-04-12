@@ -12,9 +12,15 @@ Functions
 
 ## Week 4
 
-Revision,conditions, loops, functions
-Object
-Higher Order Functions
-Day Sets and Maps
-Destructuring and Spreading
+- Revision,conditions, loops, functions
+- Object
+  
+### 5
+- Revision of Object
+- Revision of loops(for, while, do while, forEach, for of, for in)
+- Higher Order Functions
+- Date Object
+- Sets and Maps
+- Destructuring and Spreading
+- DOM
 
