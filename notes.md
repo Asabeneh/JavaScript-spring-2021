@@ -15,7 +15,8 @@ Functions
 - Revision,conditions, loops, functions
 - Object
   
-### 5
+## Week 5
+
 - Revision of Object
 - Revision of loops(for, while, do while, forEach, for of, for in)
 - Higher Order Functions
@@ -24,3 +25,9 @@ Functions
 - Destructuring and Spreading
 - DOM
 
+## Week 6
+
+- Set and Map
+- Object Oriented Programming
+- Destructuring and spreading
+- Working on DOM project
