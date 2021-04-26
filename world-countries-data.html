@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+        <style>
+            #container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            #container > div {
+                width:250px;
+                height:150px;
+                margin:30px;
+            }
+            span {
+                display: block;
+            }
+            img {
+                width:50%;
+            }
+            input {
+                display: block;
+                padding:10px;
+                width:80%;
+                border-radius: 25px;
+                margin: 30px auto;
+                outline: none;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1 id='title'>DOM Lesson</h1>
+        <p class='web'>Learn HTML</p>
+        <p class='web'>Learn CSS too</p>
+        <p class='web'>If you know JavaScript, you are ruled world.</p> -->
+
+        <input type="text" id='term' placeholder="Search by country name, languages, city">
+        <div id = 'container'>
+
+        </div>
+    
+    <script src='./data/countries-object.js'></script>
+    <script src="./countries-object-dom.js">
+
+    </script>
+    </body>
+</html>

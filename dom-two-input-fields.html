@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM:Creating HTML Elements</title>
+</head>
+<body>
+
+    <input  id='mass' /> 
+    <input  id='gravity'/> 
+    <button>Find weight</button>
+
+    <p id='result'></p>
+
+    <script>
+        const massInput = document.querySelector('#mass')
+        const gravityInput = document.querySelector('#gravity')
+        const button = document.querySelector('button')
+        const result = document.querySelector('p')
+
+        button.addEventListener('click', () => {
+            let mass = Number(massInput.value)
+            let gravity = Number( gravityInput.value)
+            const weight = mass * gravity
+            result.textContent = `The weight of the object is ${weight} N.`  
+        })
+
+
+
+    </script>
+</body>
+</html>

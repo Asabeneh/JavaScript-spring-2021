@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM:Creating HTML Elements</title>
+</head>
+<body>
+
+    <input /> 
+    <button>Calculate</button>
+
+    <p id='result'></p>
+
+    <script>
+
+
+const input = document.querySelector('input')
+const button = document.querySelector('button')
+
+button.addEventListener('click', () => {
+    let radius = Number(input.value)
+     let p = document.querySelector('#result')
+     let area = Math.round(Math.PI * radius ** 2)
+    if(radius == 0){
+p.textContent = 'Please fill the text field with a number'
+    } else {
+        p.textContent = `The are of the circle is ${area} square meter.`
+    }
+    
+
+})
+
+/*
+Develop a small application that calculate the weight of an object in different planets
+
+Two input field: mass, gravity
+button > to calculate a weight
+*/
+
+
+
+    </script>
+</body>
+</html>
