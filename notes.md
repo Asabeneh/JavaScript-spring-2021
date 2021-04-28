@@ -40,21 +40,5 @@ Functions
 
 
 Go to Asabeneh GitHub account and create a data structure for the following repos:30DaysOfPython, 30DaysOfReact, 30DaysOfJavaScript, Python for Everyone, JavaScript for Everyone and React for Everyone
-const repos = [
-    {
-        name:'30DaysOfJavaScript'
-        stars:8.1
-        forks:1.7
-    },
-     {
-        name:'30DaysOfPython'
-        stars:8.1
-        forks:1.7
-    },
-     {
-        name:'30DaysOfPython'
-        stars:8.1
-        forks:1.7
-    }
-]
+
 

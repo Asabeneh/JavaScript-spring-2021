@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id='graph'>
+
+    </div>
+    <script>
+
+    const repos = [
+    {
+        name:'30DaysOfJavaScript',
+        stars:8100,
+        forks:1700
+    },
+     {
+        name:'30DaysOfPython',
+        stars:6300,
+        forks:1400
+    },
+     {
+        name:'30DaysOfReact',
+        stars:730,
+        forks:160
+    },
+    {
+        name:'JavaScript for Everyone',
+        stars:315,
+        forks:127
+    },
+    {
+        name:'Python for Everyone',
+        stars:95,
+        forks:33
+    },
+    {
+        name:'React for Everyone',
+        stars:136,
+        forks:37
+    }
+]
+
+const graph = document.getElementById('graph')
+graph.style.width = '100vw'
+const maxValue = Math.max(...repos.map((repo) => repo.stars))
+
+const styles = {
+    height:'50px',
+    border:'2px solid orange'
+}
+
+
+for (const repo of repos){
+    let bar = document.createElement('div')
+    bar.textContent = repo.stars
+    bar.style.height = '25px'
+    bar.style.border = '2px solid orange'
+    bar.style.margin  = '2px 0'
+    bar.style.width = 5 + (repo.stars)/100 + 'vw'
+    graph.appendChild(bar)
+
+}
+
+
+
+
+</script>
+</body>
+</html>
