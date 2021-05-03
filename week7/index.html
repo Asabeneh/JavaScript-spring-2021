@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Destructuring and spreading
+         const numbers = [1, 2, 3, 4, 5, 6]
+         let [a, b, c, ...rest] = numbers
+         console.log(a)
+         console.log(b)
+         console.log(c)
+         console.log(rest)
+
+         const countries = ['Finland','Sweden','Denmark', 'Norway','Iceland', 'France','Belgium','Germany']
+
+         let [fin, swe,,, ice, ...CEC] = countries
+         console.log(fin)
+         console.log(swe)
+         console.log(ice)
+         console.log(CEC)
+         
+         const nums1 = [1, 2, 3]
+
+         const nums2 = [0].concat(nums1)
+         console.log(nums2)
+     
+const fullStack = [
+  ['HTML', 'CSS', 'JS', 'React'],
+  ['Node', 'Express', 'MongoDB']
+]
+
+let [[firstTech, secondTech, thirdTech]= frontend, backend] = fullStack
+console.log(firstTech)
+console.log(secondTech)
+console.log(backend)
+
+const arr = [['Finland', 'Helsinki'], ['Sweden', 'Stockholm'], ['Norway', 'Oslo']]
+
+for(const [country, city] of arr){
+    console.log(country, city)
+}
+
+// Object
+
+const rectangle = {
+    width:25,
+    height:20,
+    perimeter:90
+}
+console.log(rectangle.width)
+console.log(rectangle['width'])
+
+let {width:w, height:h, perimeter:p= 0} = rectangle
+console.log(w)
+console.log(h)
+console.log(p)
+
+const calculatePerimeter = ({width, height}) => {
+  return 2 * (width + height)
+}
+
+console.log(calculatePerimeter(rectangle))
+
+const tasks = [
+{
+  task:'Prepare JS Test',
+  time:'4/1/2020 8:30',
+  completed:true
+},
+{
+  task:'Give JS Test',
+  time:'4/1/2020 10:00',
+  completed:false
+},
+{
+  task:'Assess Test Result',
+  time:'4/1/2020 1:00',
+  completed:false
+}
+]
+
+for (const {task, time, completed} of tasks){
+    console.log(task, time, completed)
+}
+
+const evens = [0, 2, 4, 6, 8, 10]
+const odds = [1, 3, 5, 7, 9]
+
+
+const wholeNumbers = [...evens, ...odds]
+console.log(wholeNumbers)
+
+const user = {
+  name:'Asabeneh',
+  title:'Programmer',
+  country:'Finland',
+  city:'Helsinki'
+}
+
+const user2 = {...user, nationality:'Ethiopian'}
+console.log(user2)
+
+
+// a function that take unlimited number of argument
+// sumNumbers(1, 2, 3, 4, 25, -9, 20, 20)
+
+/*
+function sumNumbers(){
+    let sum = 0
+for (const arg of arguments){
+    sum += arg
+}
+return sum
+}
+
+console.log(sumNumbers(1, 2, -5, 20, 10))
+*/
+
+/*
+const sumNumbers = (...args) => {
+     let sum = 0
+for (const arg of args){
+    sum += arg
+}
+return sum
+
+}
+*/
+
+const sumNumbers = (...args) =>  args.reduce((a, b) => a + b)
+
+
+console.log(sumNumbers(1,2, 3))
+
+    </script>
+</body>
+</html>
