@@ -3,31 +3,36 @@
 const nums = [1, 2, 3, 4, 5]
 //[1, 4, 9, 16, 25]
 
-// const newArr = []
-// for(let i = 0; i < nums.length ;i++){
-//     newArr.push(nums[i] * nums[i])
-// }
+// long way
+const newArr = []
+for(let i = 0; i < nums.length ;i++){
+    newArr.push(nums[i] * nums[i])
+}
 
-// console.log(newArr)
+console.log(newArr)
 
+// shorter way using map
 const numsSquared = nums.map((item) =>  item * item)
 
+// Filter
 const evens = nums.filter((item) => item % 2 == 0)
 
 console.log(numsSquared)
 console.log(evens)
 
 
-// let total = 0
-// for (const num of nums){
-//     console.log(`${num} ${total}`)
-//     total = total + num
-// }
-// console.log(total)
-
-const total = nums.reduce((acc, curr) =>  acc * curr, 1)
-
+// long way
+let total = 0
+for (const num of nums){
+    console.log(`${num} ${total}`)
+    total = total + num
+}
 console.log(total)
+
+// Shorter way
+const totalValue = nums.reduce((acc, curr) =>  acc * curr, 1)
+
+console.log(totalValue)
 
 let three = nums.find((item) => item > 3)
 console.log(three)

@@ -1,38 +1,43 @@
 // Regular loop
 
 
+// it prints from 1 to 10
+for(let i = 1; i < 11; i = i + 5){
+    console.log(i)
+}
 
-// for(let i = 1; i < 11; i = i + 5){
-//     console.log(i)
-// }
-
-// for(let i = 10; i >= 0; i--){
-//     console.log(i)
-// }
-
-
-
-// let count = 0
-// while (count < 11) {
-//     console.log(count )
-//     count++
-// }
+// it prints from 10 to 1
+for(let i = 10; i >= 1; i--){
+    console.log(i)
+}
 
 
 
+// prints 0 to 10
+let count = 0
+while (count < 11) {
+    console.log(count )
+    count++
+}
 
-// let count = 12
-// do {
-//     console.log(count )
-//     count++
-// } while (count < 11)
 
-/*
 
-count arr = []
-while (array.length!=10) {}
 
-*/
+// prints 1 to 10 
+let k = 1
+do {
+    console.log(k )
+    k++
+} while (k < 11)
+
+
+
+const arr = []
+while (arr.length!=10) {
+ arr.push()
+}
+
+
 
 const items = ['Mango', 'Milk','Honey','Sugar','Coffee','Meat']
 
@@ -48,21 +53,22 @@ items.forEach(function(item){
 
 
 
-// 
+// looping using for of
 for(const item of items){
     console.log(item.toUpperCase())
 }
 
 
-// const user = {
-//     name:'JOHN',
-//     age:25,
-//     skills:['HTML', 'CSS','JS']
-// }
+const user = {
+    name:'JOHN',
+    age:25,
+    skills:['HTML', 'CSS','JS']
+}
 
-// for (const key in user){
-//     console.log(key, user[key])
-// }
+// loop using for in with object
+for (const key in user){
+    console.log(key, user[key])
+}
 
 const users = {
   Alex: {

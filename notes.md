@@ -41,4 +41,11 @@ Functions
 
 Go to Asabeneh GitHub account and create a data structure for the following repos:30DaysOfPython, 30DaysOfReact, 30DaysOfJavaScript, Python for Everyone, JavaScript for Everyone and React for Everyone
 
-
+# Week
+- Fetch
+- Promise
+- Set and Map
+- Hoisting
+- var, let, const
+- Regular Expression
+- Function declaration versus arrow function

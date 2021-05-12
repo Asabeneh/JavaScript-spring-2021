@@ -1,7 +1,7 @@
 const title = document.getElementById('title')
 const result  = document.getElementById('result')
 title.style.textAlign = 'center'
-title.textContent = `The total number of the coutries are ${countriesObj.length}`
+title.textContent = `The total number of the countries are ${countriesObj.length}`
 
 const container = document.getElementById('container');
 const termInput = document.getElementById('term')
@@ -39,7 +39,7 @@ termInput.addEventListener('input', (e) => {
 			
 		)
     container.innerHTML = ''
-    result.textContent = filteredCountries.length
+    result.textContent = `The result based on the search term is ${filteredCountries.length}`
     createCountriesUI(filteredCountries)
 })
 

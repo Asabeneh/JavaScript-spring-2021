@@ -35,7 +35,7 @@ console.log('The exponential', exponential)
 console.log('The full name is ', fullName)
 
 
-// Guys, find the area of a cirle
+// Guys, find the area of a circle
 // area = pi * r * r
 
 const PI  = Math.PI

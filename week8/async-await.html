@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries data</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #container > div {
+            width:250px;
+            height:150px;
+            margin:30px;
+        }
+        span {
+            display: block;
+        }
+        img {
+            width:50%;
+        }
+        input {
+            display: block;
+            padding:10px;
+            width:80%;
+            border-radius: 25px;
+            margin: 30px auto;
+            outline: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title"></h1>
+        <p id="result"></p>
+    </header>
+
+    <input type="text" id='term' placeholder="Search by country name, languages, city">
+
+    <div id = 'container'></div>
+
+<script src="./async-await.js"></script>
+</body>
+</html>
