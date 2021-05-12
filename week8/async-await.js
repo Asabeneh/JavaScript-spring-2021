@@ -1,9 +1,6 @@
 
 const container = document.getElementById('container')
 const result = document.getElementById('result')
-
-const url = 'https://restcountries.eu/rest/v2/all'
-
 const createCountryUI = ({name, capital, population, flag}) => {
     return  `<div>
     <div>
@@ -34,6 +31,7 @@ fetch(url).then(function(response){
 
 let content = ''
 async function fetchData () {
+const url = 'https://restcountries.eu/rest/v2/all'
    const response = await fetch(url)
    const data = await response.json()
    container.textContent = data.length

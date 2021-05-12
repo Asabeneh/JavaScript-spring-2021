@@ -13,12 +13,12 @@ console.log(str.replace(pattern, 'hate'))
 // replace => it replace a substring
 console.log(str.replace(pattern, ''))
 
-paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+const paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
 
 const findMostFreqWords = (txt, n) => {
     const freqTable = {}
     const arr =[]
-    const words = txt.replace(/\./g, '').toLowerCase().split(' ')
+    const words = txt.replace(/[^\w\d\s]/g, '').toLowerCase().split(' ')
     for(const word of words){
         if(freqTable[word]){
             freqTable[word] += 1
